@@ -1,0 +1,35 @@
+[
+    {
+      "curso": "Atendimento ao Cliente",
+      "descricao": "Curso completo para funcionários aprenderem técnicas de atendimento presencial e digital.",
+      "modulos": [
+        {
+          "titulo": "Introdução ao Atendimento",
+          "pdf": "cursos/atendimento1.pdf",
+          "video": "https://www.youtube.com/embed/7l5lXKg8g0I"
+        },
+        {
+          "titulo": "Atendimento via WhatsApp",
+          "pdf": "cursos/atendimento2.pdf",
+          "video": "https://www.youtube.com/embed/dpU6VjDMnus"
+        }
+      ]
+    },
+    {
+      "curso": "Informática Básica",
+      "descricao": "Aprenda o essencial de informática para uso diário e sistemas internos.",
+      "modulos": [
+        {
+          "titulo": "Introdução ao Computador",
+          "pdf": "cursos/informatica1.pdf",
+          "video": "https://www.youtube.com/embed/abcd1234"
+        },
+        {
+          "titulo": "Pacote Office",
+          "pdf": "cursos/informatica2.pdf",
+          "video": "https://www.youtube.com/embed/efgh5678"
+        }
+      ]
+    }
+  ]
+  

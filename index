@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Renotur - LMS Premium</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <!-- Header -->
+  <header>
+    <div class="logo"><h1>Renotur</h1></div>
+    <nav>
+      <a data-target="dashboard">Dashboard</a>
+      <a data-target="cursos">Cursos</a>
+      <a data-target="certificados">Certificados</a>
+      <a data-target="boas">Boas Práticas</a>
+      <a data-target="perfil">Perfil</a>
+    </nav>
+  </header>
+
+  <!-- Dashboard principal -->
+  <div id="dashboard" class="dashboard subscreen active">
+    <aside>
+      <div class="card">
+        <h2>Perfil</h2>
+        <p>Nome: Lama Brinde</p>
+        <p>Cargo: Atendente</p>
+        <p>Progresso total:</p>
+        <canvas id="progressChart" class="progress-chart" height="150"></canvas>
+      </div>
+      <div class="card protocols">
+        <h2>Protocolos da Empresa</h2>
+        <ul>
+          <li>Segurança no Trabalho</li>
+          <li>Compliance e Ética</li>
+          <li>Gestão de Dados</li>
+          <li>Atendimento ao Cliente</li>
+        </ul>
+      </div>
+    </aside>
+    <main>
+      <div class="card">
+        <h2>Cursos Recomendados</h2>
+        <div class="courses" id="recommended-courses">
+          <!-- Cards de cursos vão ser gerados dinamicamente via JS -->
+        </div>
+    
+        <h2>Conquistas</h2>
+        <div class="achievements" id="achievements-container">
+          <!-- Cards de conquistas vão ser preenchidos pelo JS -->
+        </div>
+      </div>
+    </main>    
+  </div>
+
+  
+
+  <!-- Subtela Cursos -->
+  <div id="cursos" class="subscreen">
+    <aside>
+      <div class="card protocols">
+        <h2>Cursos Disponíveis</h2>
+        <ul id="cursos-list">
+          <!-- Lista de cursos vai ser gerada pelo JS -->
+        </ul>
+      </div>
+    </aside>
+    <main>
+      <div class="card">
+        <h2 id="curso-titulo">Selecione um curso</h2>
+        <ul id="modulos-list">
+          <!-- Módulos do curso selecionado serão gerados aqui -->
+        </ul>
+        <div id="modulo-content">
+          <!-- Conteúdo PDF ou vídeo será carregado aqui -->
+        </div>
+        <button id="prevBtn">Anterior</button>
+        <button id="nextBtn">Próximo</button>
+      </div>
+    </main>
+  </div>
+
+  <!-- Subtelas restantes -->
+  <div id="certificados" class="subscreen"></div>
+  <div id="boas" class="subscreen"></div>
+  <div id="perfil" class="subscreen"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
